@@ -160,7 +160,7 @@
   color: var(--color-main);
   font-family: var(--font-family-accent);
   font-size: 14px;
-  opacity: 0.5;
+  opacity: 0.7;
   text-shadow: -1px 0 var(--text-contour), 0 1px var(--text-contour),
     1px 0 var(--text-contour), 0 -1px var(--text-contour);
   mix-blend-mode: hard-light;
@@ -363,19 +363,15 @@
 }
 
 .brightness {
-  filter: brightness(200%);
+  filter: brightness(110%);
 }
 
 .contrast {
-  filter: contrast(80%);
-}
-
-.blur {
-  filter: blur(0.5rem);
+  filter: contrast(90%) brightness(80%);
 }
 
 .opacity {
-  filter: opacity(0.8) contrast(200%);
+  filter: opacity(0.8) contrast(200%) brightness(80%);
 }
 
 .grayscale {
@@ -383,7 +379,7 @@
 }
 
 .saturate {
-  filter: saturate(300%);
+  filter: saturate(300%) brightness(80%);
 }
 
 .hue-rotate {
@@ -391,9 +387,5 @@
 }
 
 .sepia {
-  filter: sepia(100%);
-}
-
-.invert {
-  filter: invert(0.7);
+  filter: sepia(100%) blur(0.1rem) brightness(80%);
 }
