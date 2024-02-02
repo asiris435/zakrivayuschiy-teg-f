@@ -3,7 +3,7 @@
   min-block-size: 100dvb;
   max-inline-size: 1440px;
   font-family: var(--font-family-main, sans-serif);
-  font-variation-settings: var(--font-weight-text);
+  font-variation-settings: "wght" var(--font-weight-text, 400);
   background-color: var(--bg-color, #fff);
   color: var(--color-main, #000);
   background-image: var(--bg-image);
@@ -32,7 +32,7 @@
   padding-block-start: 136px;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 480px) {
   .header__title {
     padding-block-start: 120px;
   }
@@ -160,20 +160,20 @@
   color: var(--color-main);
   font-family: var(--font-family-accent);
   font-size: 14px;
-  opacity: 0.7;
-  text-shadow: -1px 0 var(--text-contour), 0 1px var(--text-contour),
-    1px 0 var(--text-contour), 0 -1px var(--text-contour);
+  opacity: 0.5;
+  text-shadow: -1px 0 var(--label-contour), 0 1px var(--label-contour),
+    1px 0 var(--label-contour), 0 -1px var(--label-contour);
   mix-blend-mode: hard-light;
 }
 
-@supports (-webkit-text-stroke: 1px var(--text-contour)) {
+@supports (-webkit-text-stroke: 1px var(--label-contour)) {
   .card__label {
-    -webkit-text-stroke: 1px var(--text-contour);
+    -webkit-text-stroke: 1px var(--label-contour);
     text-shadow: none;
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 480px) {
   .card__label {
     inset-inline-end: 11px;
   }
@@ -285,7 +285,7 @@
   align-items: center;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 480px) {
   .footer__button {
     padding: 15px 20px;
     grid-template-columns: 1fr;
@@ -313,7 +313,7 @@
   padding: 30px;
 }
 
-@media (max-width: 376px) {
+@media (375px <= width < 480px) {
   .dialog {
     padding: 30px 40px;
   }
@@ -340,7 +340,7 @@
   align-items: center;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 480px) {
   .dialog__container {
     grid-template-columns: 39px 198px;
   }

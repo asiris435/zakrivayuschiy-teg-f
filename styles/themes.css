@@ -11,6 +11,7 @@
   --border: 2px solid #00cc14;
   --color-accent: #00cc14;
   --text-contour: #00cc14;
+  --label-contour: #000;
 }
 
 :root.theme-light {
@@ -26,6 +27,7 @@
   --border: 2px solid #000;
   --color-accent: #000;
   --text-contour: #fff;
+  --label-contour: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,5 +44,6 @@
     --border: 2px solid #00cc14;
     --color-accent: #00cc14;
     --text-contour: #00cc14;
+    --label-contour: #000;
   }
 }
