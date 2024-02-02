@@ -313,9 +313,15 @@
   padding: 30px;
 }
 
-@media (375px <= width < 480px) {
+@media (max-width: 480px) {
   .dialog {
     padding: 30px 40px;
+  }
+}
+
+@media (max-width: 374px) {
+  .dialog {
+    padding: 30px 20px;
   }
 }
 
